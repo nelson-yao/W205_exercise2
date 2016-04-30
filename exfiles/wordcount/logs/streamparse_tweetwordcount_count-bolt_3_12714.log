@@ -1,0 +1,9 @@
+2016-04-28 19:52:50,267 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/wordcount.py", line 40, in process
+    cur.execute(cur.mogrify("SELECT COUNT(*) from tweetwordcount WHERE word=%s",(uWord)))
+TypeError: not all arguments converted during string formatting

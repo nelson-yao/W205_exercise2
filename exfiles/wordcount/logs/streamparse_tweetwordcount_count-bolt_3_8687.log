@@ -1,0 +1,11 @@
+2016-04-28 18:24:54,628 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/wordcount.py", line 38, in process
+    cur.execute("""SELECT COUNT(*) from Tweetwordcount WHERE word=\'{}\'""" .format(uWord))
+DataError: invalid byte sequence for encoding "UTF8": 0x00
+HINT:  This error can also happen if the byte sequence does not match the encoding expected by the server, which is controlled by "client_encoding".
+

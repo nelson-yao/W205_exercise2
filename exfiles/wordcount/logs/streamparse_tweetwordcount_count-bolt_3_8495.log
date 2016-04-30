@@ -1,0 +1,9 @@
+2016-04-28 18:23:15,278 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/wordcount.py", line 26, in process
+    uWordre.sub("'", " ", word)
+NameError: global name 'uWordre' is not defined

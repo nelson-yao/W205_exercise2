@@ -1,0 +1,12 @@
+2016-04-28 19:45:24,851 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/wordcount.py", line 39, in process
+    cur.execute("SELECT COUNT(*) from tweetwordcount WHERE word=\'{}\''" .format(uWord))
+ProgrammingError: unterminated quoted string at or near "'relationship''"
+LINE 1: SELECT COUNT(*) from tweetwordcount WHERE word='relationship...
+                                                       ^
+

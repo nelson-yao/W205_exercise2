@@ -1,0 +1,8 @@
+2016-04-28 04:43:33,053 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/component.py", line 487, in run
+    self.initialize(storm_conf, context)
+  File "bolts/wordcount.py", line 16, in initialize
+    cur.execute("""CREATE DATABASE tcount""")
+ProgrammingError: database "tcount" already exists
+

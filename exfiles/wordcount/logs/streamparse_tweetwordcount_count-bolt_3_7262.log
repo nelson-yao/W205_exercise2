@@ -1,0 +1,7 @@
+2016-04-28 04:55:35,704 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/component.py", line 487, in run
+    self.initialize(storm_conf, context)
+  File "bolts/wordcount.py", line 16, in initialize
+    cur.exectue("""DROP DATABASE IF EXISTS tcount""")
+AttributeError: 'psycopg2.extensions.cursor' object has no attribute 'exectue'
