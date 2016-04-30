@@ -5,6 +5,8 @@ use the following way to clone the respository
 ```
 git clone https://github.com/seriousNel/W205_exercise2.git
 ```
+The folder contains all of the streaming scripts and serving scripts
+
 ### Database setup 
 
 After starting the instance, using the pre-baked instance for exercise 2. Make sure postgres is installed.
