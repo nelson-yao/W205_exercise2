@@ -5,6 +5,11 @@ use the following way to clone the respository
 ```
 git clone https://github.com/seriousNel/W205_exercise2.git
 ```
+enter the main project folder:
+```
+cd exfiles
+```
+
 The folder contains all of the streaming scripts and serving scripts
 
 ### Database setup 
